@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="10" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Add New Entry functionality is working fine]]>
+    </line>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Not able to add duplicate number]]>
+    </line>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Can handle remove parameter if collection is empty]]>
+    </line>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Collection length is correct]]>
+    </line>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Function returns position of entry in collection]]>
+    </line>
+    <line>
+      <![CDATA[[INFO] : Assertion Passed : Function returns -1 if entry is not present]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69" started-at="2018-07-10T12:10:26Z" finished-at="2018-07-10T12:10:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69" started-at="2018-07-10T12:10:26Z" finished-at="2018-07-10T12:10:27Z">
+      <class name="testquestion1.Test_MyCollection">
+        <test-method status="FAIL" signature="Test10_Rotate_Array()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test10_Rotate_Array" duration-ms="15" started-at="2018-07-10T12:10:27Z" description="Left Rotation Collection Functionality" finished-at="2018-07-10T12:10:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [{-4,-5,54,95,-14,-15,4,5}] but found [question1.MyCollection@3632be31]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [{-4,-5,54,95,-14,-15,4,5}] but found [question1.MyCollection@3632be31]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testquestion1.Test_MyCollection.Test10_Rotate_Array(Test_MyCollection.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test10_Rotate_Array -->
+        <test-method status="PASS" signature="Test1_Able_To_Add_New_Entry_In_Collection()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test1_Able_To_Add_New_Entry_In_Collection" duration-ms="2" started-at="2018-07-10T12:10:27Z" description="Check Add functionality" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Add New Entry functionality is working fine]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test1_Able_To_Add_New_Entry_In_Collection -->
+        <test-method status="PASS" signature="Test2_Duplicate_Entry_In_Collection()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test2_Duplicate_Entry_In_Collection" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Check Add functionality" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Not able to add duplicate number]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test2_Duplicate_Entry_In_Collection -->
+        <test-method status="FAIL" signature="Test3_Get_Collection_Functionality()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test3_Get_Collection_Functionality" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Check toString function" finished-at="2018-07-10T12:10:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion Failed : Not able to read collection expected [{}] but found [question1.MyCollection@520a3426]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion Failed : Not able to read collection expected [{}] but found [question1.MyCollection@520a3426]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at testquestion1.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3_Get_Collection_Functionality -->
+        <test-method status="FAIL" signature="Test4_DoubleCapacity()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test4_DoubleCapacity" duration-ms="2" started-at="2018-07-10T12:10:27Z" description="Check Overflow Collection" finished-at="2018-07-10T12:10:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [question1.MyCollection@6c3708b3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [question1.MyCollection@6c3708b3]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at testquestion1.Test_MyCollection.Test4_DoubleCapacity(Test_MyCollection.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4_DoubleCapacity -->
+        <test-method status="FAIL" signature="Test5_Remove_Functionality_If_Entry_Already_Present()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test5_Remove_Functionality_If_Entry_Already_Present" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Check remove functionality" finished-at="2018-07-10T12:10:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at testquestion1.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5_Remove_Functionality_If_Entry_Already_Present -->
+        <test-method status="PASS" signature="Test6_Remove_Functionality_If_Collection_Is_Empty()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test6_Remove_Functionality_If_Collection_Is_Empty" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Check remove functionality" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Can handle remove parameter if collection is empty]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test6_Remove_Functionality_If_Collection_Is_Empty -->
+        <test-method status="PASS" signature="Test7_Collection_Length_Functionality()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test7_Collection_Length_Functionality" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Size of Collection" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Collection length is correct]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test7_Collection_Length_Functionality -->
+        <test-method status="PASS" signature="Test8_Search_Functionality_If_Enrty_Exists()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test8_Search_Functionality_If_Enrty_Exists" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Search Functionality" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Function returns position of entry in collection]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test8_Search_Functionality_If_Enrty_Exists -->
+        <test-method status="PASS" signature="Test9_Search_Functionality_If_Enrty_Not_Exists()[pri:0, instance:testquestion1.Test_MyCollection@3a82f6ef]" name="Test9_Search_Functionality_If_Enrty_Not_Exists" duration-ms="1" started-at="2018-07-10T12:10:27Z" description="Search Functionality" finished-at="2018-07-10T12:10:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO] : Assertion Passed : Function returns -1 if entry is not present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test9_Search_Functionality_If_Enrty_Not_Exists -->
+      </class> <!-- testquestion1.Test_MyCollection -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
