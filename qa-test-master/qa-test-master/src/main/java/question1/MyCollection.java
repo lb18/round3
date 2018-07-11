@@ -46,7 +46,7 @@ public class MyCollection implements DynamicArray{
 		// TODO Auto-generated method stub
 		if (search(numberToAdd) == -1)
 		{
-			if (cnt+1 > cur_size) {System.out.println(cnt);doubleCapacity();}
+			if (cnt+1 > cur_size) doubleCapacity();
 			numArray[cnt] = numberToAdd;
 			cnt++;
 			num_of_elements_added++;
@@ -61,29 +61,24 @@ public class MyCollection implements DynamicArray{
 		int tmp[] = new int[cur_size];
 		for (int i = 0; i < cnt; i++)
 			tmp[i] = numArray[i];
-//		System.out.println("Hi");
-//		System.out.println(numArray.length);
-		for (int i = 0; i < cnt; i++) System.out.print(tmp[i] + " ");
-		System.out.println("");
 		numArray = tmp;
 	}
 
 	public boolean remove(int numberToRemove) {
 		// TODO Auto-generated method stub
-		/*if (search(numberToRemove) != -1)
+		if (search(numberToRemove) != -1)
 		{
 			int idx = 0;
-			for (int i = 0; i < numArray.length; i++)
+			for (int i = 0; i < cnt; i++)
 				if (numArray[i] == numberToRemove)
 				{
 					idx = i;
 					break;
 				}
-			for (int i = idx; i < numArray.length-1; i++)
+			for (int i = idx; i < cnt-1; i++)
 					numArray[i] = numArray[i+1];
-			//int arr[] = new int arr[numArray.lenght-1];
 			return true;
-		}*/
+		}
 		return false;
 	}
 
@@ -91,20 +86,26 @@ public class MyCollection implements DynamicArray{
 		// TODO Auto-generated method stub
 		return num_of_elements_added;
 	}
-	
-	/*public int abs(int n, int i)
-	{
-		int num = numArray.length-1-i;
-		return n < 0?num:i;
-	}*/
 
 	public int[] rotate(int n) {
-		// TODO Auto-generated method stub\
-		/*int len = numArray.length;
-		int tmp[] = new int[len];
-		for (int i = 0; i < len; i++) tmp[i] = numArray[(abs(i-n, i))%len];
-		for (int i = 0; i < len; i++) numArray[i] = tmp[i];*/
-		return null;
+		// TODO Auto-generated method stub
+		int tmp[] = new int[cur_size];
+		for (int i = 0; i < cnt; i++) tmp[i] = numArray[(i+n)%cnt];
+		for (int i = 0; i < cnt; i++) numArray[i] = tmp[i];
+		return numArray;
+	}
+	
+	public String toString()
+	{
+		String str = "{";
+		for (int i = 0; i < cnt; i++)
+		{
+			if (i != cnt-1) str += numArray[i] + ",";
+			else str += numArray[i];
+		}
+			
+		str += "}";
+		return str;
 	}
 	
 
